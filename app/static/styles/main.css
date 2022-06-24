@@ -3,12 +3,22 @@ p, h1, h2, h3, h4, h5, h6, button {
 }
 
 body {
-    background-color: #f5f5f9;
+    background-color: #E1CEC9;
+    /* background-color: #f5f5f9; */
+    /*
     background-size: cover;
-    width: auto; 
+    width: 100%; 
     overflow-x: hidden;
     font-family: "Roboto", serif;
-    margin: 0px;
+    margin: 0px; */
+    /* padding: 4em 0em; */
+	/* background-color: var(--bg-primary);
+	max-width: 59em;
+	margin: 0 auto;
+	background-image: url(../img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
 }
 
 .nav-bar {
@@ -99,16 +109,16 @@ body {
 /* main menu bar */
 
 .navbar.navbar-expand-lg {
-    background-color: #1d539f !important;
+    background-color: #B4BAD4 !important;
     color: white !important;
 }
 
 .navbar-brand{
-    color: white !important;
+    color: black !important;
 }
 
 .nav-link{
-    color: white !important;
+    color: black !important;
 }
 
 /* hobbies page */
