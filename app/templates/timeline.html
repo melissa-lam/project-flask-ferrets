@@ -14,3 +14,54 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 {% endblock %}
+
+{% block body %}
+
+<form id="form">
+    <label for="name">Name:</label><br>
+    <input name="name" type="text" id="name"><br>
+    <label for="email">Email:</label><br>
+    <input name="email" type="text" id="email"><br>
+    <label for="content">Content:</label><br>
+    <textarea name="content" type="text" id="content"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+<h3>Posts:</h3>
+
+<div class = "timeline">
+    <h5>test</h5>
+    {% for p in timeline %}
+    <div class="post">
+        <p>Date: {{ p.created_at }}</p>
+        <p>Name: {{ p.name }}</p>
+        <p>Email: {{ p.email }}</p>
+        <p>Content: {{ p.content }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+<script>
+    const form = document.getElementById('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const payload = new FormData(form);
+
+        console.log(payload.entries());
+
+        fetch('/api/timeline_post', {
+            method: 'POST',
+            body: payload,
+        })
+
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+        .finally(location.reload())
+    })
+
+</script>
+
+{% endblock %}

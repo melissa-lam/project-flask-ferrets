@@ -50,7 +50,8 @@ def experiences():
 
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', title="Timeline")
+    timeline = TimelinePost.select().order_by(TimelinePost.created_at.desc())
+    return render_template('timeline.html', title="Timeline", timeline=timeline)
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
@@ -72,6 +73,9 @@ def post_time_line_post():
 
 @app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
+    # all_posts = TimelinePost.select().order_by(TimelinePost.created_at.desc())
+    # timeline = [model_to_dict(p) for p in all_posts]
+    # return {"timeline": timeline}
     return {
         'timeline_posts': [
             model_to_dict(p)
