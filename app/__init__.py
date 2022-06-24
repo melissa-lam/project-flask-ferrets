@@ -62,14 +62,12 @@ def post_time_line_post():
 
     return model_to_dict(timeline_post)
 
-# @app.route('/api/timeline_post/<id>', methods=['DELETE'])
-# def get_time_line_post(id):
-#     TimelinePost.delete_by_id(id)
-#     # post_to_delete = TimelinePost.query.get(id)
-#     # mydb.session.delete(post_to_delete)
-#     # mydb.session.commit()
-
-#     return "deleted"
+@app.route('/api/timeline_post', methods=['DELETE'])
+def delete_time_line_post():
+    id = request.form["id"]
+    TimelinePost.delete_by_id(id)
+    
+    return "successfully deleted post"
 
 @app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
