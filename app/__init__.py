@@ -31,7 +31,7 @@ mydb.create_tables([TimelinePost])
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="Linus Torvalds", url=os.getenv("URL"))
+    return render_template('index.html', title="Melissa Lam", url=os.getenv("URL"))
 
 @app.route('/education')
 def education():
@@ -66,14 +66,11 @@ def post_time_line_post():
 def delete_time_line_post():
     id = request.form["id"]
     TimelinePost.delete_by_id(id)
-    
+
     return "successfully deleted post"
 
 @app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
-    # all_posts = TimelinePost.select().order_by(TimelinePost.created_at.desc())
-    # timeline = [model_to_dict(p) for p in all_posts]
-    # return {"timeline": timeline}
     return {
         'timeline_posts': [
             model_to_dict(p)

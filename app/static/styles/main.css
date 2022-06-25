@@ -4,6 +4,10 @@ p, h1, h2, h3, h4, h5, h6, button {
 
 body {
     background-color: #E1CEC9;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
     /* background-color: #f5f5f9; */
     /*
     background-size: cover;
@@ -19,6 +23,22 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; */
+}
+
+.top-container {
+    /* position: absolute; */
+    /* top: 56px;
+    bottom: 0; */
+    width: 100%;
+    background-color: #B4BAD4;
+    position: relative;
+    padding-top: 100px;
+}
+
+.name-header {
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .nav-bar {
@@ -199,6 +219,7 @@ body {
   }
 
   aboutbody {
+    position: relative;
   display: grid;
   padding: 2rem;
   grid-template-columns: 300px 1fr;
