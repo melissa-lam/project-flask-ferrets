@@ -2,38 +2,149 @@
 
 {% block head %}
 <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
+<meta property="og:description" content="My Personal Portfolio">
+<meta property="og:url" content="{{ url }}">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-    <link lang='sass' rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
+<link lang='sass' rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
+<link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+<title>{{ title }}</title>
 {% endblock %}
 
 {% block body %}
+<!-- <div class="container-fluid"></div>
 <header class="nav-bar">
     <div class="nav-content">
         <a href="/">
             <div class="nav-logo">
                 <img src="./static/img/logo.svg" />
-            </div>
+            </div> 
         </a>
     </div>
-</header>
+</header> -->
 
-<div class="profile">
+<div class="container-fluid padding">
+    <div class="row jumbotron text-center">
+        <div class="col-12">
+            <h1 class="display-4">Hello! My name is Melissa!</h1>
+        </div>
+        <hr>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <img src="./static/img/logo.jpg" width=100% height=100%>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h3>My Education</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="./static/img/uni.png" alt="" width=100% height=100%>
+        </div>
+    </div>
+</div>
+
+<hr class="my-4">
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed"></div>
+    </div>
+</figure>
+
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">My Projects</h1>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">description of project</p>
+                    <a href="" class="btn btn-outline-secondary">Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">description of project</p>
+                    <a href="" class="btn btn-outline-secondary">Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">description of project</p>
+                    <a href="" class="btn btn-outline-secondary">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h4>Connect with Me!</h4>
+        </div>
+        <div class="col-12 social padding">
+            <a href="github.com"><i class="fab fa-github"></i></a>
+            <a href="linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="github.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            
+        </div> 
+    </div>
+</footer>
+<!-- <div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="profile">
     <div id="profile-picture" class="profile-picture">
         <img src="./static/img/linus.png">
     </div>
     <h1>{{ title }}</h1>
 </div>
 
-    <aboutbody>
+<aboutbody>
         <img src="./static/img/linus_on_computer.png" width="90%" height="auto" alt=''/>
         I first encountered the GNU Project in 1991 when another Swedish-speaking computer science student, Lars Wirzenius, took me to the University of Technology to listen to free software guru Richard Stallman's speech. I used Stallman's GNU General Public License version 2 (GPLv2) for my Linux kernel. </aboutbody>
     
@@ -56,7 +167,7 @@
     <aboutbody>
         <img src="./static/img/git.png" width="90%" height="auto" alt=''/>
         Although I believe "open source is the only right way to do software", I have also said that I use the "best tool for the job", even if that includes proprietary software. I was criticized for my use and alleged advocacy of the proprietary BitKeeper software for version control in the Linux kernel. I subsequently wrote a free-software replacement for it called Git. The Linux Foundation currently sponsors me so I can work full-time on improving Linux.</aboutbody>
-
+ -->
 
 
 {% endblock %}
