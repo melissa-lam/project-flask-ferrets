@@ -1,3 +1,120 @@
+html, body {
+    /* height: 100%;
+    width: 100%; */
+    font-family: "Roboto", serif;
+    /* columns: #222; */
+}
+
+/* nav bar reset styling */
+.navbar {
+    padding: 0.8rem;
+    background-color: #e9eaeb !important;
+}
+.navbar-nav li{
+    padding-right: 10px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+/* .title h1{
+    font-family: "Roboto", serif;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    color: white;
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    z-index: 3;
+} */
+
+@keyframes move-clouds-back {
+    from{background-position: 0 0;}
+    to {background-position: 10000px 0;}
+}
+
+@keyframes move-twinkle-back {
+    from{background-position: 0 0;}
+    to {background-position: -10000px 5000;}
+}
+
+.title{
+    padding-top: 17%;
+    height: 600px;
+    text-align: center;
+    color: #fffafaed;
+}
+
+.stars, .twinkles, .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+}
+
+.stars {
+    /* background-color: #000; */
+    background-attachment: fixed;
+
+    background: #000 url(../img/stars.png) repeat top center;
+    z-index: -4;
+}
+
+.twinkles {
+    background-attachment: fixed;
+
+    background: transparent url(../img/twinkles.png) repeat top center;
+    z-index: -3;
+    animation: move-twinkle-back 18s linear infinite;
+}
+
+.clouds {
+    background-attachment: fixed;
+
+    background: transparent url(../img/clouds.png) repeat top center;
+    z-index: -2;
+    opacity: 0.4;
+    animation: move-clouds-back 850s linear infinite;
+}
+.carousel-caption {
+    top: 50%;
+    /* this vertically aligns elements */
+    transform: translateY(-50%);
+    /* get rid of extra bottom space from default bootstrap CSS */
+    bottom: initial;
+    text-shadow: 2px 2px white;
+}
+
+.education-container {
+    padding-left: 50px;
+}
+
+.img-edu {
+    padding-right: 50px;
+}
+
+.jumbotron {
+    /* padding: 1rem; */
+    border-radius: 0;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
@@ -17,7 +134,7 @@ figure {
     width: 100%;
     height: 100%;
 }
-#fixed {
+.fixed {
     background-image: url('./static/img/mac.png');
     position: fixed;
     display: block;
