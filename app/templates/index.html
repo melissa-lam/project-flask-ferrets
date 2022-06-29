@@ -16,16 +16,6 @@
 {% endblock %}
 
 {% block body %}
-<!-- <div class="container-fluid"></div>
-<header class="nav-bar">
-    <div class="nav-content">
-        <a href="/">
-            <div class="nav-logo">
-                <img src="./static/img/logo.svg" />
-            </div> 
-        </a>
-    </div>
-</header> -->
 
 <div class="container-fluid padding">
     <div class="stars"></div>
@@ -61,14 +51,6 @@
     </div>
 </div> -->
 
-<!-- <div class="container-fluid padding">
-    <div class="stars"></div>
-    <div class="twinkles"></div>
-    <div class="clouds"></div>
-    <div class="title">
-        <h1>HELLO!</h1>
-    </div>
-</div> -->
 
 <!-- <div class="page-header">
     <div class="container-fluid padding">
@@ -96,138 +78,90 @@
             </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <img src="./static/img/logo.jpg" width=100% height=100%>
+            <img src="./static/img/portrait.png" width=100% height=100%>
+            
         </div>
     </div>
 </div>
 
+<a name="education"></a>
 <div class="container-fluid padding">
     <div class="row padding">
-        <div class="col-lg-8">
+        <div class="col-12 text-center">
+            <h3 class="display-6">My Education</h3>
+        </div>
+        <div class="col-lg-7">
             <div class="education-container">
-                <h3>My Education</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <img class="img-edu" src="./static/img/uni.png" alt="" width=100% height=100%>
-        </div>
+        <div class="col-lg-5 content-center">
+            <div class="education-container">
+                <img class="img-edu" src="./static/img/ubc.jpeg" alt="" width=100% height=200px>                </div>
+            </div>
     </div>
 </div>
 
-<hr class="my-4">
-<!-- <figure>
-    <div class="fixed-wrap">
-        <div class="fixed"></div>
-    </div>
-</figure> -->
 
-<div class="container-fluid padding">
+<div class="projects container-fluid padding">
     <div class="row welcome text-center">
         <div class="col-12">
             <h3 class="display-6">My Projects</h3>
-            <hr>
         </div>
     </div>
 </div>
 
-<div class="container-fluid padding">
+<div class="projects container-fluid padding">
     <div class="row padding">
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="./static/img/darkgreysquare.png" width="300px" height="300px">
                 <div class="card-body">
                     <h5 class="card-title">Project 1</h5>
                     <p class="card-text">description of project</p>
-                    <a href="" class="btn btn-outline-secondary">Link</a>
+                    <a href="https://github.com/melissa-lam/project-flask-ferrets" class="btn btn-outline-secondary">Link</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="./static/img/darkgreysquare.png" width="300px" height="300px">
                 <div class="card-body">
                     <h5 class="card-title">Project 2</h5>
                     <p class="card-text">description of project</p>
-                    <a href="" class="btn btn-outline-secondary">Link</a>
+                    <a href="https://github.com/melissa-lam/project-flask-ferrets" class="btn btn-outline-secondary">Link</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="./static/img/darkgreysquare.png" width="300px" height="300px">
                 <div class="card-body">
                     <h5 class="card-title">Project 3</h5>
                     <p class="card-text">description of project</p>
-                    <a href="" class="btn btn-outline-secondary">Link</a>
+                    <a href="https://github.com/melissa-lam/project-flask-ferrets" class="btn btn-outline-secondary">Link</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid padding">
-    <div class="row text-center padding">
+
+<div class="footer container-fluidtext-center">
+    <div class="row text-center">
         <div class="col-12">
-            <h4>Connect with Me!</h4>
+            <h5>Connect with Me!</h5>
         </div>
         <div class="col-12 social padding">
-            <a href="github.com"><i class="fab fa-github"></i></a>
-            <a href="linkedin.com"><i class="fab fa-linkedin"></i></a>
-            <a href="github.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="btn btn-outline-secondary" href="https://github.com/melissa-lam/project-flask-ferrets" role="button"><i class="fab fa-github"></i></a>
+            <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/melissalam-profile/" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-secondary" href="mailto:melissa21lam@gmail.com" role="button"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
         </div>
     </div>
 </div>
 
-<footer>
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            
-        </div> 
-    </div>
-</footer>
-<!-- <div class="container-fluid">
-    <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        <img src="./static/img/linus.png">
-    </div>
-    <h1>{{ title }}</h1>
-</div>
-
-<aboutbody>
-        <img src="./static/img/linus_on_computer.png" width="90%" height="auto" alt=''/>
-        I first encountered the GNU Project in 1991 when another Swedish-speaking computer science student, Lars Wirzenius, took me to the University of Technology to listen to free software guru Richard Stallman's speech. I used Stallman's GNU General Public License version 2 (GPLv2) for my Linux kernel. </aboutbody>
-    
-    <aboutbody>
-        <img src="./static/img/foundation.png" width="90%" height="auto" alt=''/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</aboutbody> 
-    
-    <aboutbody>
-         <img src="./static/img/illustration.png" width="90%" height="auto" alt=''/>
-        In June 2004, his family and I moved to Dunthorpe, Oregon to be closer to the OSDL's headquarters in Beaverton. From 1997 to 1999, I was involved in 86open, helping select the standard binary format for Linux and Unix. In 1999, I was named by the MIT Technology Review TR100 as one of the world's top 100 innovators under age 35.</aboutbody> 
-    
-    <aboutbody>
-        <img src="./static/img/bw_linus.png" width="90%" height="auto" alt=''/>
-        In 1999, Red Hat and VA Linux, both leading developers of Linux-based software, presented me with stock options in gratitude for my creation. That year both companies went public and my share value briefly shot up to about US$20 million.</aboutbody> 
-    
-    <aboutbody>
-        <img src="./static/img/linus_and_tux.png" width="90%" height="auto" alt=''/>
-        My personal mascot is a penguin nicknamed Tux, which has been widely adopted by the Linux community as the Linux kernel's mascot.</aboutbody> 
-    
-    <aboutbody>
-        <img src="./static/img/git.png" width="90%" height="auto" alt=''/>
-        Although I believe "open source is the only right way to do software", I have also said that I use the "best tool for the job", even if that includes proprietary software. I was criticized for my use and alleged advocacy of the proprietary BitKeeper software for version control in the Linux kernel. I subsequently wrote a free-software replacement for it called Git. The Linux Foundation currently sponsors me so I can work full-time on improving Linux.</aboutbody>
- -->
 
 
 {% endblock %}
