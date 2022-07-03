@@ -40,8 +40,9 @@ def education():
 
 @app.route('/hobbies')
 def hobbies():
+    hobbies = get_static_json("static/files/hobbies.json")
     my_hobbies = ["hiking", "skiing", "kayaking", "skating", "snowboarding", "painting", "watching movies", "reading"]
-    return render_template('hobbies.html', my_hobbies=my_hobbies)
+    return render_template('hobbies.html', my_hobbies=my_hobbies, hobbies=hobbies)
 
 @app.route('/experiences')
 def experiences():

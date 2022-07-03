@@ -17,6 +17,23 @@
 
 {% block body %}
 
+<div class="container-fluid padding">
+    <div class="row padding">
+        {% for h in hobbies %}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src= {{ h.image }} width="300px" height="300px">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">description of project</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JVDoJ7EDzlw49nIBoxztna0OfW-LFyI&ehbc=2E312F" width="640" height="430"></iframe>
+</div>
+
 <section id="hobbies">
     <div class="container">
         <div class="col-lg-12 text-center">
