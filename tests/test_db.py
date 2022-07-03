@@ -37,13 +37,13 @@ class TestTimelinePost(unittest.TestCase):
         assert second_post.id == 2
         # TODO: Get timeline posts and assert that they are correct
 
-        TimelinePost.select().order_by(TimelinePost.created_at.desc())
-        assert first_post.name == "John Doe"
-        assert first_post.email == "john@example.com"
-        assert first_post.content == "Hello worldm I\'m John!"
-        assert second_post.name == "Jane Doe"
-        assert second_post.email == "jane@example.com"
-        assert second_post.content == "Hello worldm I\'m Jane!"
+        posts = TimelinePost.select().order_by(TimelinePost.created_at.desc())
+        assert posts[1].name == "John Doe"
+        assert posts[1].email == "john@example.com"
+        assert posts[1].content == "Hello worldm I\'m John!"
+        assert posts[0].name == "Jane Doe"
+        assert posts[0].email == "jane@example.com"
+        assert posts[0].content == "Hello worldm I\'m Jane!"
 
 
 if __name__ == "__main__":
