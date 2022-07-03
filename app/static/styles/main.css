@@ -138,7 +138,7 @@ html, body {
 }
 
 .bg-primary {
-    background-color: #6c757d !important;
+    background-color: #111 !important;
 
     /* outline: auto; */
 }
@@ -146,10 +146,19 @@ html, body {
     background-color: #fff !important;
 }
 
-/* .experiences .row {
-    padding-bottom: 5% !important;
+.experiences .row {
+    height: 150px;
+}
+
+/* hobbies page */
+/* .col-md-4 .hobbies {
+    padding-right: 15%;
 } */
 
+.row .hobbies {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
