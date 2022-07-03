@@ -6,6 +6,7 @@ from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 import re
+
 load_dotenv()
 app = Flask(__name__)
 
@@ -116,3 +117,4 @@ def get_static_json(path):
 def get_static_file(path):
     root = os.path.realpath(os.path.dirname(__file__))
     return os.path.join(root, path)
+
