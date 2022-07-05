@@ -160,6 +160,11 @@ html, body {
     padding-right: 5%;
 }
 
+/* timeline page */
+.timeline-page {
+    background-image: url(../img/background.png);
+}
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
