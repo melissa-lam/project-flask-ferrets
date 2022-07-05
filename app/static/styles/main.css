@@ -165,6 +165,9 @@ html, body {
     background-image: url(../img/background.png);
 }
 
+/* .hobbies {
+    background-image: url(../img/background.png);
+} */
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
