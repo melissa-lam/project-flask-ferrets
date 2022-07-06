@@ -4,6 +4,14 @@ html, body {
     scroll-padding-top: 4rem;
 }
 
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 10px;    
+    width: 20%;
+}
+
 /* nav bar reset styling */
 .navbar {
     padding: 0.8rem;
@@ -122,6 +130,13 @@ html, body {
 }
 
 /* experiences page */
+
+
+.experiences-title {
+    padding: 90px;
+    padding-bottom: 50px;
+}
+
 .work-experiences {
     background-image: url(../img/background.png);
 }
@@ -131,6 +146,7 @@ html, body {
     
 }
 
+
 .card {
     box-shadow: #000 !important;
     /* padding-bottom: 5% !important; */
@@ -138,26 +154,38 @@ html, body {
 }
 
 .bg-primary {
-    background-color: #111 !important;
-
-    /* outline: auto; */
+    background-color: rgb(55, 50, 50) !important;
 }
 .experiences .col-md-9 {
     background-color: #fff !important;
 }
 
 .experiences .row {
-    height: 150px;
+    height: 190px;
+}
+
+.experiences .exp-head {
+    padding-top: 50px;
 }
 
 /* hobbies page */
-/* .col-md-4 .hobbies {
-    padding-right: 15%;
-} */
+
+.hobbies-page .hobbies-card {
+    border: 2px solid #000 !important;
+}
+
+.hobbies-title {
+    padding: 90px;
+    padding-bottom: 50px;
+}
 
 .row .hobbies {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.hobbies-page .map {
+    text-align: center;
 }
 
 /* timeline page */

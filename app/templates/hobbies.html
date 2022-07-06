@@ -17,13 +17,21 @@
 
 {% block body %}
 
-<section class="hobbies">
+<div class="hobbies-page">
+    <div class="container-fluid padding">
+        <div class="hobbies-title">
+            <div class="col-12 text-center">
+                <h3 class="display-4">Hobbies</h3>
+            </div>
+            <hr>
+        </div>
+    </div>
     
     <div class="container-fluid padding">
         <div class="row hobbies">
             {% for h in hobbies %}
             <div class="col-md-4 hobbies">
-                <div class="card hobbies">
+                <div class="card hobbies-card">
                     <!-- <img class="card-img-top" src= {{ h.image }} width="300px" height="300px"> -->
                     <div id="slides" class="carousel slide" data-ride="carousel">
                         <ul class="carousel-indicators">
@@ -43,18 +51,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">description of project</p>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ h.title }}</h5>
+                        <p class="card-text">{{ h.description }}</p>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         {% endfor %}
         </div>
+    </div>
+    
+    <div class="container-fluid padding">
+        <div class="hobbies-title">
+            <div class="col-12 text-center">
+                <h3 class="display-4">Places I've Travelled To</h3>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="map">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JVDoJ7EDzlw49nIBoxztna0OfW-LFyI&ehbc=2E312F" width="640" height="430"></iframe>
     </div>
-</section>
+</div>
 
 
 <!-- <section id="hobbies">
