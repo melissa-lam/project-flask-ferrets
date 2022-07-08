@@ -44,8 +44,8 @@ def index():
 
 @app.route('/education')
 def education():
-    education = get_static_json("static/files/education.json")
-    return render_template('education.html', education=education)
+    # education = get_static_json("static/files/education.json")
+    return render_template('education.html')
 
 
 @app.route('/hobbies')
@@ -56,8 +56,8 @@ def hobbies():
 
 @app.route('/experiences')
 def experiences():
-    experiences = get_static_json("static/files/experiences.json")
-    return render_template('experiences.html', experiences=experiences)
+    # experiences = get_static_json("static/files/experiences.json")
+    return render_template('experiences.html')
 
 
 @app.route('/timeline')
