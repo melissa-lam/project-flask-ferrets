@@ -17,7 +17,7 @@ class AppTestCase(unittest.TestCase):
         html = response.get_data(as_text=True)
         assert "<title>Melissa Lam</title>" in html
         # TODO add more tests relating to the home page
-        assert "<h2>HELLO!</h2>" in html
+        assert "<h1>HELLO!</h1>" in html
         message = "Test value is none."
         self.assertIsNotNone(response, message)
     
